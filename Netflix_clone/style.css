@@ -21,14 +21,46 @@ body{
 .container .head img{
     width: 13%;
 }
+
+.container .head select{
+     text-align: right;
+     padding: 8px 18px;
+     /* padding: 6px 0 6px 20px; */
+     /* margin: 0 0 0 75rem; */
+     /* margin-left: 500px; */
+     position: absolute;
+     border-radius: 6px;
+     background: transparent;
+     color: #fff;
+     margin-right: 10px;
+}
+
+div .select{
+    position: relative;
+    left:35rem;
+    bottom: 1rem;
+}
+.container .head div.select svg{
+    height: 20px;
+    fill: #fafafa;
+    position: absolute;
+    margin-top: 7px;
+    margin-left: 4px;
+    /* margin-left: 500px; */
+}
 .container .head a{
     color: #fff;
     text-decoration: none;
     background-color: #E50914;
-    padding: 8px 18px;
-    border-radius: 6px;
+    padding: 7px 18px;
+    border-radius: 3px;
 }
 
+input::placeholder{
+    font-size: 15px;
+    margin-left: 10px;
+    padding: 12px;
+}
 .banner{
     width: 100%;
     height: 100vh;
@@ -47,8 +79,6 @@ body{
     height: 400px;
     z-index:  1;
     background: linear-gradient(to bottom, #000, transparent);
-    /* background: rgba(0, 0, 0, 0.4);
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0, transparent 60%, rgba(0,0,0,0.8)); */
 
 }
 .banner:after {
@@ -60,9 +90,6 @@ body{
     height: 400px;
     z-index:  1;
     background: linear-gradient(to top, #000, transparent);
-    /* background: rgba(0, 0, 0, 0.4);
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0, transparent 60%, rgba(0,0,0,0.8)); */
-
 }
 
 .banner .fit{
@@ -149,7 +176,6 @@ body{
     align-items: center;
     padding: 32px 64px;
     border: 9px solid #111;
-
 }
 .story1 .talk{
     width: 40%;
@@ -160,9 +186,6 @@ body{
     padding-bottom: 10px;
     margin: 0px 0px 8px;
     color: #fff;
-    /* font-size: 3.125rem;
-    line-height: 1.1;
-    margin-bottom: 0.5rem; */
 }
 .story1 .talk p{
     font-size: 27px;
@@ -174,6 +197,23 @@ body{
 .story1 img{
     width: 100%;
 }
+.story1 video {
+    position: relative;
+    bottom: 450px;
+    left: 106px;
+    object-fit: cover;
+    z-index: -1;
+    width: 55.5vh;
+}
+.story1 .video2{
+    position: relative;
+    bottom: 527px;
+    left: 149px;
+    object-fit: cover;
+    z-index: -1;
+    width: 50vh;
+}
+
 /* ======== */
 
 .story2{
@@ -183,7 +223,7 @@ body{
     align-items: center;
     padding: 32px 64px;
     border: 9px solid #111;
-    /* background-color: #000; */
+
 }
 .story2 .talk{
     width: 48%;
@@ -194,9 +234,6 @@ body{
     padding-bottom: 10px;
     margin: 0px 0px 8px;
     color: #fff;
-    /* font-size: 3.125rem;
-    line-height: 1.1;
-    margin-bottom: 0.5rem; */
 }
 .story2 .talk p{
     font-size: 27px;
@@ -307,7 +344,7 @@ body{
     font-size: 16px;
     border: 1px solid gray;
     outline: none;
-    /* color: #000; */
+    color: #000;
     padding: 10px 10px 0 0;
     border-radius: 2px;
     min-width: 400px;
@@ -329,13 +366,9 @@ body{
     min-width: 310px;
     padding: 0 30px;
 }
-/* p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-} */
+ /* --footer- */
+
+
 
 .footer{
     display: flex;
@@ -344,16 +377,18 @@ body{
     margin: auto;
     padding: 64px 0;
 }
+
 .footer .first{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: auto;
     width: 45%;
+   
 }
 
 .footer .first li{
-    padding: 13px 0;
+    padding: 12px 0;
 }
 .footer .first li a{
     color: #737373;
@@ -362,39 +397,21 @@ body{
 .footer .first li a:hover{
     border-bottom: 1px solid #ccc;
 }
-/* @media screen and (min-width:768px){
-    .container .head{
-        padding: 20px 50px;
-    }
-    .container .head img{
-        width: 20%;
-    }
-    .banner .box .heading h2{
-        font-size: 49px;
-        letter-spacing: 1.5px;
-        width: 100%;
-    }
-    .banner .box .heading h5{
-        font-size: 22px;
-        padding: 13px 0;
-    }
-    .banner .box .heading p{
-        font-size: 18px;
-        padding: 13px 0;
-        padding-bottom: 17px;
-    }
-    .banner .box .search{
-        justify-content: center;
-    }
-    .banner .box .search input{
-        min-width: 310px;
-        margin-bottom: 20px;    
-    }
-
+.footer .headng.top{
+    margin: 0 0 30px;
+    padding: 0;
 }
-@media screen and (min-width:360px){
-    
-} */
+.top a{
+    color: #737373;
+}
+.footer p{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: #737373
+}
+
+
 
 @media screen and (max-width:787px){
 
@@ -404,6 +421,7 @@ body{
     .container .head img{
         width: 20%;
     }
+
     .banner .box .heading h2{
         font-size: 49px;
         letter-spacing: 1.5px;
@@ -446,6 +464,20 @@ body{
     }
     .story1 .img{
         width: 80%;
+    }
+    .story1 video {
+  
+        bottom: 352px;
+        left: 1px;
+        width:33vh;
+    }
+    .story1 .video2{
+        bottom: 400px;
+        left: 7px;
+        width: 28vh;
+    }
+    div .select{
+        left:7rem;
     }
     .story2{
         flex-direction: column;
@@ -501,7 +533,7 @@ body{
         flex-direction: column;
     }
     footer .first{
-        width: 50%;
+        width: 90%;
     }
 
 }
@@ -510,6 +542,9 @@ body{
     .container .head img{
         width: 23%;
     }
+    .container .head select{
+        margin-right: 30px;
+   }
     .banner .box .heading h2{
         font-size: 45px;
         letter-spacing: 1.2px;
@@ -532,7 +567,20 @@ body{
     .story1 .talk p{
         font-size: 19px;
     }
-
+    .story1 video {
+  
+        bottom: 214px;
+        left: -1px;
+        width:19.6vh;
+    }
+    .story1 .video2{
+        bottom: 250px;
+        left: -10px;
+        width: 17vh;
+    }
+    div .select{
+        left:-1rem;
+    }
     .story2 .talk h1{
         font-size: 48px;
         letter-spacing: 1.2px;
@@ -540,6 +588,7 @@ body{
     .story2 .talk p{
         font-size: 19px;
     }
+
     .question{
         width: 90%;
     }
