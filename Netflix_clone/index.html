@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix Clone</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
       </style>
@@ -14,7 +15,17 @@
      <section class="container">
         <div class="head">
             <img src="media/netflix_logo.png" alt="">
-            <a href="#">Sign up</a>
+            <div class="select">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
+                  </svg>   
+                  <select>
+                    <option value="">English</option>
+                    <option value="">Hindi</option>
+                </select>               
+            </div>
+
+            <a href="signup.html">Sign up</a>
         </div>
      </section>
 
@@ -27,8 +38,8 @@
                 <p>Ready to watch? Enter your email to create or restart your membership.</p>
             </div>
             <div class="search">
-                <input type="text" name="" placeholder="Enter Email">
-                <a href="#">Get Started &#62; </a>
+                <input type="email" name="" placeholder="Enter Email">
+                <a  href="#">Get Started &#62; </a>
             </div>
         </div>
      </section>
@@ -40,6 +51,7 @@
         </div>
         <div class="img">
             <img src="media/tv.png" alt="">
+            <video class="video1" autoplay="" playsinline="" loop="" src="media/firstvdo.m4v" type="video/m4v" ></video>
         </div>
      </section>
 
@@ -61,6 +73,7 @@
         </div>
         <div class="img">
             <img src="media/img3.png" alt="">
+            <video class="video2" autoplay="" playsinline="" loop="" src="media/secondvdo.m4v" type="video/m4v" ></video>
         </div>
      </section>
 
@@ -152,47 +165,50 @@
                 <p>Ready to watch? Enter your email to create or restart your membership.</p>
             </div>
             <div class="search">
-                <input type="text" name="" placeholder="Enter Email">
+                <input type="email" name="" placeholder="Enter Email">
                 <a href="#">Get Started &#62; </a>
             </div>
         </div>
      </section>
-
+     
      <section class="footer">
+        <div class="headng">
+            <p class="top">
+                Questions? Call 
+            <a href="tel:000-800-919-1694">000-800-919-1694</a>
+        </p>
+        </div>
+        <br>
         <div class="first">
-            <!-- <p>Questions? Call 
-                <a href="tel:000-800-919-1694">000-800-919-1694</a>
-            </p> -->
-            
             <ul class="item">
                 <li><a href="#">FAQ</a></li>
                 <li><a href="#">Investor Relations</a></li>
-                <li><a href="#">Privacy</a></li>
+                <li><a href="https://help.netflix.com/legal/privacy">Privacy</a></li>
                 <li><a href="#">Speed Test</a></li>
             </ul>
-
             <ul class="item">
-                <li><a href="#">Help Centre</a></li>
+                <li><a href="#">Help centre</a></li>
                 <li><a href="#">Jobs</a></li>
                 <li><a href="#">Cookie Preferences</a></li>
                 <li><a href="#">Legal Notices</a></li>
             </ul>
         <!-- </div>
-        <div class="first"> -->
+            <div class="first"> -->
+                <ul class="item">
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Ways to Watch</a></li>
+                    <li><a href="#">Corporate Information</a></li>
+                    <li><a href="#">Only on Netflix</a></li>
+                </ul>
+                hriii
+                <ul class="item">
+                    <li><a href="#">Media Centre</a></li>
+                    <li><a href="#">Terms of Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
             
-            <ul class="item">
-                <li><a href="#">Account</a></li>
-                <li><a href="#">Ways to Watch</a></li>
-                <li><a href="#">Corporate Information</a></li>
-                <li><a href="#">Only on Netflix</a></li>
-            </ul>
-
-            <ul class="item">
-                <li><a href="#">Media Centre</a></li>
-                <li><a href="#">Terms of Use</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
         </div>
-     </section>
+
+    </section>
 </body>
 </html>
