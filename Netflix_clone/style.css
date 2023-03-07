@@ -309,7 +309,7 @@ input::placeholder{
     margin-bottom: 6px;
 }
 .qst:target .icon::after{
-    transform: rotateY(360deg);
+    transform: rotateY(720deg);
     
 }
 /* --end-- */
@@ -607,6 +607,6 @@ input::placeholder{
     .banner1 .box .search input{
         margin: 10px;     
     }
-   
+    
     
 }
